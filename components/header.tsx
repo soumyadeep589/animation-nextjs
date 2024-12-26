@@ -2,7 +2,7 @@ import React from "react";
 
 const header = () => {
   return (
-    <header>
+    <header className="top-0 left-0 w-full z-50 relative">
       <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
         <div className="flex justify-between items-center mx-auto max-w-screen-xl">
           <div className="flex-1">
@@ -125,6 +125,6 @@ const header = () => {
       </nav>
     </header>
   );
-}
+};
 
 export default header;
