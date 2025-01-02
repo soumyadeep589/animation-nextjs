@@ -58,7 +58,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="flex space-x-4 absolute top-[6%] left-[21%] transform -translate-x-1/2 z-5">
+            <div className="flex space-x-4 absolute top-[8%] left-[21%] transform -translate-x-1/2 z-5">
               <div className="image filter blur-sm">
                 <Image
                   src={BoySmile}
@@ -69,7 +69,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="flex space-x-4 absolute top-[10%] left-[78%] transform -translate-x-1/2 z-5">
+            <div className="flex space-x-4 absolute top-[12%] left-[78%] transform -translate-x-1/2 z-5">
               <div className="image filter blur-sm">
                 <Image
                   src={Dolphin}
@@ -80,7 +80,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="flex space-x-4 absolute top-[40%] left-[78%] z-10">
+            <div className="flex space-x-4 absolute top-[42%] left-[78%] z-10">
               <div className="image">
                 <Image
                   src={GirlSmile}
@@ -90,7 +90,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="flex space-x-4 absolute top-[75%] left-[45%] z-10">
+            <div className="flex space-x-4 absolute top-[78%] left-[45%] z-10">
               <div className="image">
                 <Image
                   src={Mountain}
@@ -100,7 +100,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="flex space-x-4 absolute top-[55%] left-[10%] z-10">
+            <div className="flex space-x-4 absolute top-[58%] left-[10%] z-10">
               <div className="image">
                 <Image
                   src={Robot}
@@ -129,12 +129,50 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col items-center space-y-4 md:flex-row md:space-y-0 md:space-x-6">
-              <button className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-medium px-6 py-3 rounded-full shadow hover:from-blue-600 hover:to-cyan-600 button">
-                Try it on Gemini →
+              <button className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-medium px-3 py-3 rounded-full shadow hover:from-blue-600 hover:to-cyan-600 button">
+                <span className="flex items-center">
+                  Try it on Gemini
+                  <svg
+                    className="w-5 h-5 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m9 5 7 7-7 7"
+                    />
+                  </svg>
+                </span>
               </button>
 
-              <button className="border border-cyan-500 text-black font-medium px-6 py-3 rounded-full hover:border-cyan-600 hover:text-cyan-600 button">
-                Try it on Vertex AI →
+              <button className="border border-cyan-500 text-black font-medium px-3 py-3 rounded-full hover:border-cyan-600 hover:text-cyan-600 button">
+                <span className="flex items-center">
+                  Try it on Vertex AI
+                  <svg
+                    className="w-5 h-5 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m9 5 7 7-7 7"
+                    />
+                  </svg>
+                </span>
               </button>
             </div>
           </div>
