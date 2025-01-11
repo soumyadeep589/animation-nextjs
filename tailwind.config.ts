@@ -15,6 +15,13 @@ export default {
       fontFamily: {
         sans: ["Poppins", "sans-serif"],
       },
+      textWrap: {
+        balance: "balance",
+      },
+      backgroundImage: {
+        "gradient-blue-green":
+          "linear-gradient(90deg, #4285f4 35%, #2daeb8 90%)",
+      },
     },
   },
   plugins: [],

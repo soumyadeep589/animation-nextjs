@@ -20,3 +20,21 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.text-container span {
+  @apply opacity-0; /* Tailwind's utility classes */
+}
+
+.text-container strong {
+  font-weight: inherit;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.list-item {
+  @apply inline-flex flex-nowrap items-center justify-around border-2 border-transparent rounded-[48px] h-[44px] py-2 px-6;
+}
