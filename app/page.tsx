@@ -1,7 +1,7 @@
 "use client";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { SetStateAction, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Dog from "../assets/husky.jpg";
 import Elephant from "../assets/elephant.jpg";
@@ -37,13 +37,38 @@ const animateWords = (selector: string) => {
   }
 };
 
-const useIntersectionObserver = (sections) => {
-  const [activeIndex, setActiveIndex] = useState(null);
+const animateItems = (selector: string) => {
+  // Target elements and create staggered animation
+  gsap.utils.toArray<HTMLElement>(selector).forEach((item) => {
+    gsap.fromTo(
+      item,
+      {
+        opacity: 0,
+        y: 50, // Start slightly below
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power3.out",
+        stagger: 0.3,
+        scrollTrigger: {
+          trigger: item, // Element to trigger the animation
+          start: "top 99%", // When the top of the element hits 80% of the viewport
+          toggleActions: "play none none none", // Play the animation when entering
+        },
+      }
+    );
+  });
+};
+
+const useIntersectionObserver = (sections: string[]): number | null => {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   useEffect(() => {
     const observers: IntersectionObserver[] = [];
 
-    sections.forEach((selector: unknown, index: SetStateAction<null>) => {
+    sections.forEach((selector, index) => {
       const section = document.querySelector(selector);
       if (!section) return;
 
@@ -53,7 +78,7 @@ const useIntersectionObserver = (sections) => {
             setActiveIndex(index);
           }
         },
-        { threshold: 0.1 }
+        { threshold: 0.4 }
       );
 
       observer.observe(section);
@@ -101,6 +126,7 @@ export default function Home() {
         "-=0.8"
       );
     animateWords(".text-container span");
+    animateItems(".animate-item");
   }, []);
   return (
     <div>
@@ -287,15 +313,52 @@ export default function Home() {
           ))}
         </ul>
       </div>
-      <div>
-        {navItems.map((item, index) => (
-          <div
-            key={index}
-            className={`section-${index} min-h-[800px] bg-red-300`}
-          >
-            Section {index + 1}: {item}
+      <div className="relative z-1">
+        <div className="section-0 min-h-[800px] font-sans">
+          <div className="section-title my-40 mx-auto max-w-[53rem] w-full text-center">
+            <h2 className="text-5xl mb-8 animate-item">What&apos;s new?</h2>
+            <div className="max-w-[32rem] m-auto text-wrap leading-relaxed animate-item">
+              <p className="text-gray-500">
+                The latest iteration of Imagen 3 brings marked improvements to
+                its capabilities.
+              </p>
+            </div>
+            <div className="my-8 animate-item">
+              <a className="px-3 py-2 bg-gradient-blue-green bg-clip-padding text-white list-item font-medium">
+                Try the latest on ImageFX
+                <svg
+                  className="w-5 h-5 dark:text-white ml-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
-        ))}
+        </div>
+        <div className="section-1 min-h-[800px] bg-red-300">Benchmarks</div>
+        <div className="section-2 min-h-[800px] bg-red-300">Capabilities</div>
+        <div className="section-3 min-h-[800px] bg-red-300">
+          Doodles to masterpieces
+        </div>
+        <div className="section-4 min-h-[800px] bg-red-300">
+          Versatility & understanding
+        </div>
+        <div className="section-5 min-h-[800px] bg-red-300">
+          Details & precision
+        </div>
+        <div className="section-6 min-h-[800px] bg-red-300">Safety</div>
       </div>
     </div>
   );
