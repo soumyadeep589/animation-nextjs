@@ -313,8 +313,8 @@ export default function Home() {
           ))}
         </ul>
       </div>
-      <div className="relative z-1">
-        <div className="section-0 min-h-[800px] font-sans">
+      <div className="">
+        <div className="section-0 whatsnew-container min-h-[800px] font-sans">
           <div className="section-title my-40 mx-auto max-w-[53rem] w-full text-center">
             <h2 className="text-5xl mb-8 animate-item">What&apos;s new?</h2>
             <div className="max-w-[32rem] m-auto text-wrap leading-relaxed animate-item">
@@ -337,7 +337,7 @@ export default function Home() {
                 >
                   <path
                     stroke="currentColor"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
                     d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778"
@@ -346,6 +346,74 @@ export default function Home() {
               </a>
             </div>
           </div>
+          <section className="my-20 mx-16 font-sans">
+            <ul className="flex items-center justify-between gap-10">
+              <li className="flex-1">
+                <div className="border rounded-[24px] text-center break-words">
+                  <Image
+                    src="https://lh3.googleusercontent.com/Q9k1l01kBREgNbcRcU2u6E1-6j1wIZArm9gQREMFuTKSJF5bhMt3208H4xElDfItsja29aQVQ76ZyvBCQ4ToF7pZygxzPOFhLFMLJG7iMmb5OfzvUA=w415"
+                    alt="Image brightness"
+                    width={415}
+                    height={233}
+                  />
+                  <div className="p-6">
+                    <p className="font-normal text-[1.25rem]">
+                      Brightness and vibrancy
+                    </p>
+                    <div className="my-3">
+                      <p className="text-neutralGray">
+                        Several advancements to our model have, together,
+                        resulted in better overall color balance.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li className="flex-1">
+                <div className="border rounded-[24px] text-center break-words">
+                  <Image
+                    src="https://lh3.googleusercontent.com/F37WBTKXQZMj4vqd5ASgeQ3wGcnKwXSM5p79SuEsJfwRaZ_zrOtkwXJ9FHwmIO8_IwJQ_swefYqLNuUMuGdD0Fvo0wWwTjR6i7Gho1uCBq-D8gO1=w415"
+                    alt="Image brightness"
+                    width={415}
+                    height={233}
+                  />
+                  <div className="p-6">
+                    <p className="font-normal text-[1.25rem]">
+                      Diverse art styles
+                    </p>
+                    <div className="my-3 overflow-hidden">
+                      <p className="text-neutralGray">
+                        Imagen can now render diverse art styles with greater
+                        accuracy - from photo realism to impressionism, and from
+                        abstract to anime.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li className="flex-1">
+                <div className="border rounded-[24px] text-center break-words">
+                  <Image
+                    src="https://lh3.googleusercontent.com/k1UeUjQ1psbbA8lt2gyO0MdC22WMjxmY0jSahrkcIg_NsqR2u4Zm_DWPTGOh_K5aS_wcf-uYcenAhT2ViMa2Lj_yJt4zS-LMV7MjrFUHnbJ1eSh_JLI=w415"
+                    alt="Image brightness"
+                    width={415}
+                    height={233}
+                  />
+                  <div className="p-6">
+                    <p className="font-normal text-[1.25rem]">
+                      High-fidelity detail
+                    </p>
+                    <div className="my-3 overflow-hidden">
+                      <p className="text-neutralGray">
+                        Richer textures and enhanced details result in more
+                        visually compelling images.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
         </div>
         <div className="section-1 min-h-[800px] bg-red-300">Benchmarks</div>
         <div className="section-2 min-h-[800px] bg-red-300">Capabilities</div>
