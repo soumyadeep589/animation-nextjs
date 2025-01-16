@@ -12,6 +12,8 @@ import Mountain from "../assets/mountain.jpg";
 import Robot from "../assets/robot.jpg";
 import Clouds from "../assets/clouds.jpg";
 
+import Carousel from "@/components/carousel";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const animateWords = (selector: string) => {
@@ -63,7 +65,7 @@ const animateItems = (selector: string) => {
 };
 
 const useIntersectionObserver = (sections: string[]): number | null => {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
   useEffect(() => {
     const observers: IntersectionObserver[] = [];
@@ -273,8 +275,8 @@ export default function Home() {
           </div>
         </div>
       </article>
-      <section className="min-h-screen block m-auto max-w-[53rem] w-full flex items-center justify-center">
-        <div className="text-container text-[3rem] font-sans font-normal tracking-[-0.5px] leading-[1.1666666667] text-gray-900 text-center break-words overflow-wrap-normal bg-clip-text bg-gradient-blue-green">
+      <section className="min-h-screen block m-auto max-w-[58rem] w-full flex items-center justify-center">
+        <div className="text-container text-[2.8rem] font-sans font-normal tracking-[-0.5px] leading-[1.1666666667] text-gray-900 text-center break-words overflow-wrap-normal bg-clip-text bg-gradient-blue-green text-balance">
           <p>
             <span>Imagen 3 is our </span>
             <span>
@@ -297,7 +299,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <div className="max-w-[95%] w-fit sticky top-5 z-100 flex bg-gray-200 border border-gray-300 rounded-[120px] shadow-none overflow-hidden my-4 mx-auto  box-border font-sans font-medium text-[1rem] leading-5">
+      <div className="max-w-[95%] w-fit sticky top-5 z-50 flex bg-gray-200 border border-gray-300 rounded-[120px] shadow-none overflow-hidden my-4 mx-auto  box-border font-sans font-medium text-[1rem] leading-5">
         <ul className="flex w-auto my-0 mx-auto overflow-auto p-0.5 whitespace-nowrap items-center justify-center">
           {navItems.map((item, index) => (
             <li
@@ -314,7 +316,7 @@ export default function Home() {
         </ul>
       </div>
       <div className="">
-        <div className="section-0 whatsnew-container min-h-[800px] font-sans">
+        <div className="section-0 min-h-[800px] font-sans">
           <div className="section-title my-40 mx-auto max-w-[53rem] w-full text-center">
             <h2 className="text-5xl mb-8 animate-item">What&apos;s new?</h2>
             <div className="max-w-[32rem] m-auto text-wrap leading-relaxed animate-item">
@@ -414,6 +416,9 @@ export default function Home() {
               </li>
             </ul>
           </section>
+          <div className="my-[80px] mx-auto max-w-[66rem] relative">
+            <Carousel />
+          </div>
         </div>
         <div className="section-1 min-h-[800px] bg-red-300">Benchmarks</div>
         <div className="section-2 min-h-[800px] bg-red-300">Capabilities</div>
