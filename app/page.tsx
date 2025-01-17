@@ -420,7 +420,91 @@ export default function Home() {
             <Carousel />
           </div>
         </div>
-        <div className="section-1 min-h-[800px] bg-red-300">Benchmarks</div>
+        <div className="section-1 min-h-[800px]">
+          <div className="section-title text-center font-sans">
+            <h2 className="text-[3rem] text-textBlack mb-6 animate-item">
+              Benchmarks
+            </h2>
+            <div className="max-w-[40rem] mx-auto">
+              <p className="text-neutralGray text-lg text-pretty animate-item">
+                Human evaluators prefer the newest version of Imagen 3 to
+                previous versions of the model and to other leading image
+                generation models.
+              </p>
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-12 max-w-[65rem] my-36 mx-auto">
+            <figure>
+              <Image
+                className="rounded-[24px]"
+                src="https://lh3.googleusercontent.com/8V6t82Ivl61Q8ojDAMHsDkH11hdgGmxqtgLk6MpIlfQ8biROYbTY1nQ31AJHhKmmN5UOcCvKdwp2FgAG-MlYC-vxuhMiyPHRoV2q7CHKEdeE4KZXGA=w512"
+                alt="Image brightness"
+                width={500}
+                height={233}
+              />
+              <figcaption className="mt-4">
+                <p className="text-neutralGray text-sm">
+                  Human evaluation on GenAI-Bench: Elo scores on overall
+                  preference benchmark for Imagen 3 vs other models.
+                </p>
+              </figcaption>
+            </figure>
+            <figure>
+              <Image
+                className="rounded-[24px]"
+                src="https://lh3.googleusercontent.com/M-GB-3G6i72JR-KbgRWxpqG-uteQiTinWMbeZsNygy0caDyuO5YOhE1T3QoKOZt_DEZoRDlcQ0DECHJy-mpjPSQzp8GO008MdPhyck8Gwmpo4sQInA=w512"
+                alt="Image brightness"
+                width={500}
+                height={233}
+              />
+              <figcaption className="mt-4">
+                <p className="text-neutralGray text-sm">
+                  Human evaluation on GenAI-Bench: win-rate percentages for
+                  overall preference of Imagen 3 vs other models.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+          <div className="max-w-[36rem] my-24 mx-auto text-neutralGray font-sans">
+            <p>
+              Imagen 3 also holds the highest score for visual quality, meaning
+              its images are appealing and largely artifact-free. Evaluators
+              also scored it highly for its ability to respond accurately to
+              prompts.
+            </p>
+            <p className="mt-4">
+              Further details on these scores, our methodology and performance
+              improvements are available in Appendix D of our updated technical
+              report.
+            </p>
+          </div>
+          <section className="max-w-[36rem] mx-auto font-sans">
+            <ul className="flex items-center justify-center">
+              <li>
+                <button className="flex items-center justify-center hover:bg-red-400 bg-gradient-aqua py-3 px-4 text-textBlack rounded-[24px] text-base font-medium  hover:shadow-lg">
+                  View tech report
+                  <svg
+                    className="w-5 h-5 dark:text-white ml-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778"
+                    />
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </section>
+        </div>
         <div className="section-2 min-h-[800px] bg-red-300">Capabilities</div>
         <div className="section-3 min-h-[800px] bg-red-300">
           Doodles to masterpieces
