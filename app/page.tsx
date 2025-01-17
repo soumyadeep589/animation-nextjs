@@ -505,7 +505,117 @@ export default function Home() {
             </ul>
           </section>
         </div>
-        <div className="section-2 min-h-[800px] bg-red-300">Capabilities</div>
+        <div className="section-2 min-h-[800px] mx-16">
+          <div className="section-title my-48 mx-auto max-w-[50rem] text-center font-sans">
+            <h2 className="text-[3rem] text-textBlack mb-6 animate-item">
+              Greater detail, fewer artifacts
+            </h2>
+            <div className="max-w-[40rem] mx-auto">
+              <p className="text-neutralGray text-lg text-pretty animate-item">
+                We’ve significantly improved Imagen 3’s ability to understand
+                prompts, which helps the models generate a wide range of visual
+                styles and capture small details from longer prompts.
+              </p>
+            </div>
+          </div>
+          <section className="my-20 mx-8 font-sans">
+            <ul className="flex items-center justify-between gap-10">
+              <li className="flex-1">
+                <div className="border rounded-[24px] text-center break-words">
+                  <Image
+                    src="https://lh3.googleusercontent.com/Xhpbk7xqTBPjDMw0PxnbNi_HGc1CG9m7TBhb6R1JoHztRiRhB0VGJ-R7xXnrAKTFXhqu19zBFLgfeJMwHkILDKENhZE1s_V0FYbRwIZuiq98G4mhq-Q=w415"
+                    alt="Image brightness"
+                    width={415}
+                    height={233}
+                  />
+                  <div className="p-6">
+                    <p className="font-normal text-[1.25rem]">
+                      Greater versatility and prompt understanding
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li className="flex-1">
+                <div className="border rounded-[24px] text-center break-words">
+                  <Image
+                    src="https://lh3.googleusercontent.com/6B5hfy13ykA6xbq1edI8qy-y6VS76PaEdfG-n3yuIrDybdvSGXAqaTS0KGMgGjhhRDkn3vjZEFiTTQS-HHG0ToaHsiTkuWuaN5XK8ulA4CGN6_HqOg=w415"
+                    alt="Image brightness"
+                    width={415}
+                    height={233}
+                  />
+                  <div className="p-6">
+                    <p className="font-normal text-[1.25rem]">
+                      Higher quality images
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li className="flex-1">
+                <div className="border rounded-[24px] text-center break-words">
+                  <Image
+                    src="https://lh3.googleusercontent.com/F44blJXoE6iox_RBcatqqq69d_541pe5HaqSB9jETqPMUgr2Jl4Mb6GgpO_yEUhTMTxDWIuT0JdHRaU9GGYh6ECDObgIL6eoRaw0MUi1yRWePMApIg=w415"
+                    alt="Image brightness"
+                    width={415}
+                    height={233}
+                  />
+                  <div className="p-6">
+                    <p className="font-normal text-[1.25rem]">
+                      Better text rendering
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section className="my-8 mx-auto max-w-[38rem] font-sans animate-item">
+            <ul className="flex items-center justify-center gap-4">
+              <li>
+                <button className="flex items-center justify-center hover:bg-red-400 bg-gradient-blue-green py-3 px-4 text-white rounded-[24px] text-base font-medium  hover:shadow-lg">
+                  Try it on Gemini
+                  <svg
+                    className="w-5 h-5 dark:text-white ml-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li>
+                <button className="flex items-center justify-center hover:bg-red-400 bg-gradient-aqua py-3 px-4 text-textBlack rounded-[24px] text-base font-medium  hover:shadow-lg">
+                  Try it on ImageFX
+                  <svg
+                    className="w-5 h-5 dark:text-white ml-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778"
+                    />
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </section>
+        </div>
         <div className="section-3 min-h-[800px] bg-red-300">
           Doodles to masterpieces
         </div>
