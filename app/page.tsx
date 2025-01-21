@@ -616,8 +616,75 @@ export default function Home() {
             </ul>
           </section>
         </div>
-        <div className="section-3 min-h-[800px] bg-red-300">
-          Doodles to masterpieces
+        <div className="section-3 min-h-[800px] mx-16 font-sans">
+          <div className="grid grid-cols-12 gap-x-12 my-36">
+            <div className="order-2 col-span-6 grid grid-rows-2 grid-cols-2 gap-12">
+              <figure className="col-start-2">
+                <Image
+                  className="rounded-3xl w-full"
+                  src="https://lh3.googleusercontent.com/vfb_JXKvDuToH-tq-iaFeHuw256WmjPDVexBRNtdKa3Nm1P6avsDx8YamC64ZVbcmfnmme9aVa1tZ2OM3v2yTLjqRrzzgkeaVfkVpRMr8fcCTXdzHQ=w276"
+                  alt="Image girls"
+                  width={240}
+                  height={233}
+                />
+                <figcaption className="mt-4">
+                  <p className="text-neutralGray font-normal text-sm">
+                    <strong>Prompt:</strong> Three women stand together
+                    laughing, with one woman slightly out of focus in the
+                    foreground. The sun is setting behind the women, creating a
+                    lens flare and a warm glow
+                  </p>
+                </figcaption>
+              </figure>
+              <figure className="col-start-1 row-start-1 row-end-3 self-center">
+                <Image
+                  className="rounded-3xl w-full"
+                  src="https://lh3.googleusercontent.com/3Eg7pYDZtDqavED1ZJpw-G5TTif7Yd9B__lK0iw8edC0cAJz00AkiiyapMUOAn0Ujcw4CKbRHHJVUd2YYx64Zp00J53OcRxMQBKquQSSdNN9099t7Uk=w276"
+                  alt="Image lion"
+                  width={240}
+                  height={233}
+                />
+                <figcaption className="mt-4">
+                  <p className="text-neutralGray font-normal text-sm">
+                    <strong>Prompt:</strong> Detailed illustration of majestic
+                    lion roaring proudly in a dream-like jungle, purple white
+                    line art background, clipart on light violet paper texture
+                  </p>
+                </figcaption>
+              </figure>
+              <figure className="col-start-2">
+                <Image
+                  className="rounded-3xl w-full"
+                  src="https://lh3.googleusercontent.com/SE1Hokc8jI3T-VOT5EO-HmdOnCnjfUe9QnK6okMrDykgI3xWLG1f3Ev0UpD6-6IBcMzU-tesRT8wJmNcxD1lImDtGogBmapo2bYU3JeUWLUhfcVY=w276"
+                  alt="Image girls"
+                  width={240}
+                  height={233}
+                />
+                <figcaption className="mt-4">
+                  <p className="text-neutralGray font-normal text-sm">
+                    <strong>Prompt:</strong> Claymation scene. A medium wide
+                    shot of an elderly woman. She is wearing flowing clothing.
+                    She is standing in a lush garden watering the plants with an
+                    orange watering can
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+            <div className="col-span-6 pr-24 flex items-center justify-center">
+              <div className="section-breaker__rich-text gdm-rich-text">
+                <h2 className="text-4xl">From Doodles to masterpieces</h2>
+                <p className="text-neutralGray text-pretty mt-4">
+                  We’ve designed Imagen 3 to generate high-quality images in a
+                  wide range of formats and styles, from photorealistic
+                  landscapes to richly textured oil paintings or whimsical
+                  claymation scenes.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="my-[80px] mx-auto max-w-[66rem]">
+            <Carousel />
+          </div>
         </div>
         <div className="section-4 min-h-[800px] bg-red-300">
           Versatility & understanding
