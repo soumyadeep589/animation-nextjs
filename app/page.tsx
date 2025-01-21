@@ -686,8 +686,36 @@ export default function Home() {
             <Carousel />
           </div>
         </div>
-        <div className="section-4 min-h-[800px] bg-red-300">
-          Versatility & understanding
+        <div className="section-4 min-h-[800px] font-sans">
+          <div className="section-title mx-auto max-w-[50rem] text-center">
+            <h2 className="text-[3rem] text-textBlack mb-6 animate-item text-balance">
+              Greater versatility and prompt understanding
+            </h2>
+            <div className="m-auto max-w-[38rem] text-neutralGray text-pretty animate-item">
+              <p>
+                Imagen 3 understands prompts written in natural, everyday
+                language, making it easier to get the output you want without
+                complex prompt engineering.
+              </p>
+            </div>
+          </div>
+          <figure className="mt-16">
+            <Image
+              className="w-full"
+              src="https://lh3.googleusercontent.com/BwWGmk21tm-ED6ALN-5MKULJ96T-9UlLwxOtToqmnyZ-56iHG7KoyBSQImaEqc00tbugmOO-W16r96jFIQNMtqHijR_4qa43hADGm7yJmovAR0D3nA=w1440"
+              alt="Image girls"
+              width={1440}
+              height={233}
+            />
+            <figcaption className="mt-4 max-w-[39rem] text-balance mx-auto">
+              <p className="text-neutralGray font-normal text-sm">
+                <strong>Prompt:</strong> A close-up photo of an origami bird
+                soaring through a cityscape, in a flock with others of different
+                colors and patterns, casting intricate shadows on the buildings
+                below
+              </p>
+            </figcaption>
+          </figure>
         </div>
         <div className="section-5 min-h-[800px] bg-red-300">
           Details & precision
