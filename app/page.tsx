@@ -812,7 +812,136 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="section-6 min-h-[800px] bg-red-300">Safety</div>
+        <div className="section-6 min-h-[800px] font-sans">
+          <div className="section-title text-center mx-auto my-24 max-w-[52rem]">
+            <h2 className="animate-item">
+              Safety from development to deployment
+            </h2>
+            <div className="m-auto max-w-[37rem] text-neutralGray text-pretty animate-item">
+              <p>
+                We used extensive filtering and data labeling to minimize
+                harmful content in datasets and reduced the likelihood of
+                harmful outputs. We also conducted red teaming and evaluations
+                on topics including fairness, bias and content safety.
+              </p>
+              <p className="mt-4">
+                We’re deploying Imagen 3 with our latest privacy, safety and
+                security technologies, including our innovative watermarking
+                tool SynthID — which embeds a digital watermark directly into
+                the pixels of the image, making it detectable for identification
+                but imperceptible to the human eye.
+              </p>
+            </div>
+          </div>
+          <section className="animate-item">
+            <div className="flex items-center justify-center gap-4">
+              <button className="flex items-center justify-center hover:bg-red-400 bg-gradient-aqua py-3 px-4 text-textBlack rounded-[24px] text-base font-medium  hover:shadow-lg">
+                View tech report
+                <svg
+                  className="w-5 h-5 dark:text-white ml-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778"
+                  />
+                </svg>
+              </button>
+              <button className="flex items-center justify-center hover:bg-red-400 bg-gradient-aqua py-3 px-4 text-textBlack rounded-[24px] t ext-base font-medium  hover:shadow-lg">
+                Learn more about SynthID
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div className="mx-16 font-sans">
+        <div className="mx-auto max-w-[38rem]">
+          <p className="text-xl">Acknowledgements</p>
+          <p className="mt-4 text-neutralGray">
+            <strong className="font-medium">Core contributors</strong>
+          </p>
+          <p className="mt-4 text-neutralGray">
+            Jason Baldridge, Jakob Bauer, Mukul Bhutani, Nicole Brichtova,
+            Andrew Bunner, Lluis Castrejon, Kelvin Chan, Yichang Chen, Sander
+            Dieleman, Yuqing Du, Zach Eaton-Rosen, Hongliang Fei, Nando de
+            Freitas, Yilin Gao, Evgeny Gladchenko, Sergio Gómez Colmenarejo,
+            Mandy Guo, Alex Haig, Will Hawkins, Hexiang (Frank) Hu, Huilian
+            Huang, Tobenna Peter Igwe, Christos Kaplanis, Siavash Khodadadeh,
+            Yelin Kim, Ksenia Konyushkova, Karol Langner, Eric Lau, Rory Lawton,
+            Shixin Luo, Soňa Mokrá, Henna Nandwani, Yasumasa Onoe, Aäron van den
+            Oord, Zarana Parekh, Jordi Pont-Tuset, Hang Qi, Rui Qian, Deepak
+            Ramachandran, Poorva Rane, Abdullah Rashwan, Ali Razavi, Robert
+            Riachi, Hansa Srinivasan, Srivatsan Srinivasan, Robin Strudel,
+            Benigno Uria, Oliver Wang, Su Wang, Austin Waters, Chris Wolff,
+            Auriel Wright, Zhisheng Xiao, Hao Xiong, Keyang Xu, Marc van Zee,
+            Junlin Zhang, Katie Zhang, Wenlei Zhou and Konrad Zolna.
+          </p>
+          <p className="mt-4 text-neutralGray">
+            <strong className="font-medium">Contributors</strong>
+          </p>
+          <p className="mt-4 text-neutralGray">
+            Ola Aboubakar, Canfer Akbulut, Oscar Akerlund, Isabela Albuquerque,
+            Nina Anderson, Marco Andreetto, Lora Aroyo, Ben Bariach, David
+            Barker, Praseem Banzal, Sherry Ben, Dana Berman, Courtney Biles,
+            Irina Blok, Pankil Botadra, Jenny Brennan, Karla Brown, John
+            Buckley, Rudy Bunel, Elie Bursztein, Christina Butterfield, Ben
+            Caine, Viral Carpenter, Norman Casagrande, Ming-Wei Chang, Solomon
+            Chang, Shamik Chaudhuri, Tony Chen, John Choi, Dmitry Churbanau,
+            Nathan Clement, Matan Cohen, Forrester Cole, Romina Datta, Mikhail
+            Dektiarev, Vincent Du, Praneet Dutta, Tom Eccles, Ndidi Elue, Ashley
+            Feden, Shlomi Fruchter, Frankie Garcia, Roopal Garg, Weina Ge, Ahmed
+            Ghazy, Bryant Gipson, Andrew Goodman, Dawid Górny, Sven Gowal,
+            Khyatti Gupta, Yoni Halpern, Yena Han, Susan Hao, Jamie Hayes,
+            Jonathan Heek, Amir Hertz, Ed Hirst, Emiel Hoogeboom, Tingbo Hou,
+            Heidi Howard, Mohamed Ibrahim, Dirichi Ike-Njoku, Joana Iljazi, Vlad
+            Ionescu, William Isaac, Komal Jalan, Reena Jana, Gemma Jennings,
+            Donovon Jenson, Xuhui Jia, Kerry Jones, Xiaoen Ju, Ivana Kajic,
+            Christos Kaplanis, Burcu Karagol Ayan, Jacob Kelly, Suraj Kothawade,
+            Christina Kouridi, Ira Ktena, Jolanda Kumakaw, Dana Kurniawan,
+            Dmitry Lagun, Lily Lavitas, Jason Lee, Tao Li, Marco Liang, Ricky
+            Liang, Maggie Li-Calis, Rui Lin, Jasmine Liu, Yuchi Liu, Javier
+            Lopez Alberca, Matthieu Kim Lorrain, Peggy Lu, Kristian Lum, Yukun
+            Ma, Chase Malik, John Mellor, Thomas Mensink, Inbar Mosseri, Tom
+            Murray, Aida Nematzadeh, Paul Nicholas, Signe Nørly, João Gabriel
+            Oliveira, Guillermo Ortiz-Jimenez, Michela Paganini, Tom Le Paine,
+            Roni Paiss, Alicia Parrish, Anne Peckham, Vikas Peswani, Igor
+            Petrovski, Tobias Pfaff, Alex Pirozhenko, Ryan Poplin, Utsav Prabhu,
+            Yuan Qi, Matthew Rahtz, Cyrus Rashtchian, Charvi Rastogi, Amit Raul,
+            Ali Razavi, Sylvestre-Alvise Rebuffi, Susanna Ricco, Felix Riedel,
+            Dirk Robinson, Pankaj Rohatgi, Bill Rosgen, Sarah Rumbley, Moonkyung
+            Ryu, Anthony Salgado, Tim Salimans, Eleni Shaw, Gregory Shaw, Sahil
+            Singla, Florian Schroff, Candice Schumann, Tanmay Shah, Brendan
+            Shillingford, Kaushik Shivakumar, Dennis Shtatnov, Zach Singer,
+            Evgeny Sluzhaev, Valerii Sokolov, Thibault Sottiaux, Florian
+            Stimberg, Brad Stone, David Stutz, Yu-Chuan Su, Eric Tabellion, Amit
+            Talreja, Shuai Tang, David Tao, Kurt Thomas, Gregory Thornton,
+            Andeep Toor, Cristian Udrescu, Aayush Upadhyay, Cristina
+            Vasconcelos, Shanthal Vasanth, Alex Vasiloff, Andrey Voynov, Amanda
+            Walker, Luyu Wang, Miaosen Wang, Simon Wang, Stanley Wang, Qifei
+            Wang, Yuxiao Wang, Ágoston Weisz, Olivia Wiles, Chenxia Wu, Xingyu
+            Federico Xu, Andrew Xue, Jianbo Yang, Luo Yu, Mete Yurtoglu, Ali
+            Zand, Han Zhang, Jiageng Zhang, Catherine Zhao, Adilet Zhaxybay,
+            Miao Zhou, Shengqi Zhu and Zhenkai Zhu.
+          </p>
+          <p className="mt-4 text-neutralGray">
+            <strong className="font-medium">Advisors</strong>
+          </p>
+          <p className="mt-4 text-neutralGray">
+            Dawn Bloxwich, Mahyar Bordbar, Luis C. Cobo, Eli Collins, Shengyang
+            Dai, Tulsee Doshi, Anca Dragan, Douglas Eck, Demis Hassabis, Sissie
+            Hsiao, Tom Hume, Koray Kavukcuoglu, Helen King, Jack Krawczyk,
+            Yeqing Li, Kathy Meier-Hellstern, Andras Orban, Yury Pinsky, Amar
+            Subramanya, Oriol Vinyals, Ting Yu and Yori Zwols.
+          </p>
+        </div>
       </div>
     </div>
   );
