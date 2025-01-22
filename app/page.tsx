@@ -717,8 +717,100 @@ export default function Home() {
             </figcaption>
           </figure>
         </div>
-        <div className="section-5 min-h-[800px] bg-red-300">
-          Details & precision
+        <div className="section-5 min-h-[800px] mx-16 font-sans">
+          <div className="section-title text-center mx-auto my-24 max-w-[52rem]">
+            <h2 className="animate-item">
+              Trained on details, delivering on precision
+            </h2>
+            <div className="m-auto max-w-[38rem] text-neutralGray text-pretty animate-item">
+              <p>
+                To help Imagen 3 capture nuances like specific camera angles or
+                compositions in long, complex prompts, we added richer detail to
+                the caption of each image in its training data. Given better
+                information to learn from, Imagen 3 more accurately generates a
+                wide range of subjects and styles.
+              </p>
+            </div>
+          </div>
+          <div className="my-[80px] mx-auto max-w-[66rem]">
+            <Carousel />
+          </div>
+          <div className="section-title text-center mx-auto my-24 max-w-[52rem]">
+            <h2 className="animate-item">Higher quality images</h2>
+            <div className="m-auto max-w-[37rem] text-neutralGray text-pretty animate-item">
+              <p>
+                Imagen 3 generates visually rich, high-quality images, with good
+                lighting and composition. It can accurately render small details
+                like the fine wrinkles on a person’s hand, and complex textures
+                like a knitted stuffed toy elephant.
+              </p>
+            </div>
+          </div>
+          <div className="my-[80px] mx-auto max-w-[66rem]">
+            <Carousel />
+          </div>
+          <div className="grid grid-cols-12 gap-x-12   my-36">
+            <div className="col-span-6 grid grid-rows-2 grid-cols-2 gap-12">
+              <figure className="col-start-1">
+                <Image
+                  className="rounded-3xl w-full"
+                  src="https://lh3.googleusercontent.com/xA4E8uhxg05lu9EymukImuJGS0269du6DT-PXydUDzMSG-8sGxpPpJxNayh61prxQDjZZdLfaaWGenEo8gPd5vyJY2jaHmOUSLEcni3UX-Yu4eaWuT8=w276"
+                  alt="Image girls"
+                  width={240}
+                  height={233}
+                />
+                <figcaption className="mt-4">
+                  <p className="text-neutralGray font-normal text-sm">
+                    <strong>Prompt:</strong> Word “light” made from various
+                    colorful feathers, black background
+                  </p>
+                </figcaption>
+              </figure>
+              <figure className="col-start-2 row-start-1 row-end-3 self-center">
+                <Image
+                  className="rounded-3xl w-full"
+                  src="https://lh3.googleusercontent.com/Qek__OdMejoZCyxn6dzPhxGjfAPb_0B6rDVCIJJzIRO5B7lQ0bU8aV-FT7jt8l1IxTbF2ZBMYC4RHjbbkbZKtXngs4zIK_HAJXlE9et-FisOsOCDuc8=w276"
+                  alt="Image lion"
+                  width={240}
+                  height={233}
+                />
+                <figcaption className="mt-4">
+                  <p className="text-neutralGray font-normal text-sm">
+                    <strong>Prompt:</strong> A single comic book panel of a boy
+                    and his father on a grassy hill, staring at the sunset. A
+                    speech bubble points from the boy's mouth and says: The sun
+                    will rise again. Muted, late 1990s coloring style
+                  </p>
+                </figcaption>
+              </figure>
+              <figure className="col-start-1">
+                <Image
+                  className="rounded-3xl w-full"
+                  src="https://lh3.googleusercontent.com/G1NFhjOUEeR7fXd9fmCmc5DI3IVWv-fpbpjA3p14zt23mn_o4ASI68a8rnvp4F-HU4QgSbbbhSd5Fue7LkQB4zFa2TOxg08Xck3TmtrcVsWRRxqWLw=w276"
+                  alt="Image girls"
+                  width={240}
+                  height={233}
+                />
+                <figcaption className="mt-4">
+                  <p className="text-neutralGray font-normal text-sm">
+                    <strong>Prompt:</strong> A photograph of a stately library
+                    entrance with the words "Central Library" carved into the
+                    stone
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+            <div className="col-span-6 pl-24 flex items-center justify-center">
+              <div className="section-breaker__rich-text gdm-rich-text">
+                <h2 className="text-4xl">Better text rendering</h2>
+                <p className="text-neutralGray text-pretty mt-4">
+                  We’ve significantly improved its text rendering capabilities,
+                  opening up new possibilities for use cases like stylized
+                  birthday cards, presentations and more.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="section-6 min-h-[800px] bg-red-300">Safety</div>
       </div>
