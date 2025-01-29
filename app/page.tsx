@@ -13,6 +13,8 @@ import Robot from "../assets/robot.jpg";
 import Clouds from "../assets/clouds.jpg";
 
 import Carousel from "@/components/carousel";
+import RelatedPostCard from "@/components/relatedPostCard";
+import ProductCard from "@/components/productCard";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -778,8 +780,8 @@ export default function Home() {
                   <p className="text-neutralGray font-normal text-sm">
                     <strong>Prompt:</strong> A single comic book panel of a boy
                     and his father on a grassy hill, staring at the sunset. A
-                    speech bubble points from the boy's mouth and says: The sun
-                    will rise again. Muted, late 1990s coloring style
+                    speech bubble points from the boy&apos;s mouth and says: The
+                    sun will rise again. Muted, late 1990s coloring style
                   </p>
                 </figcaption>
               </figure>
@@ -794,8 +796,8 @@ export default function Home() {
                 <figcaption className="mt-4">
                   <p className="text-neutralGray font-normal text-sm">
                     <strong>Prompt:</strong> A photograph of a stately library
-                    entrance with the words "Central Library" carved into the
-                    stone
+                    entrance with the words &quot;Central Library&quot; carved
+                    into the stone
                   </p>
                 </figcaption>
               </figure>
@@ -862,7 +864,7 @@ export default function Home() {
           </section>
         </div>
       </div>
-      <div className="mx-16 font-sans">
+      <div className="mx-16 mb-16 font-sans">
         <div className="mx-auto max-w-[38rem]">
           <p className="text-xl">Acknowledgements</p>
           <p className="mt-4 text-neutralGray">
@@ -941,6 +943,69 @@ export default function Home() {
             Yeqing Li, Kathy Meier-Hellstern, Andras Orban, Yury Pinsky, Amar
             Subramanya, Oriol Vinyals, Ting Yu and Yori Zwols.
           </p>
+        </div>
+      </div>
+      <section className="border-t-2 font-sans mb-8">
+        <div className="mx-16">
+          <div className="my-16 section-heading">
+            <h2 className="text-3xl">More technologies</h2>
+          </div>
+          <div className="flex justify-between gap-10">
+            <div className="flex-1">
+              <RelatedPostCard
+                imageUrl="https://lh3.googleusercontent.com/ulOZK86B4c7sXPcUnDlSQURFolyMa-8XBJQec2Woosd9zBN7De6tbvzRus1CKPVnggG9DdupDYAH_z9DLdy04CP9D_kTQ1RexdN1BGn-kx-6BkXcWA=w400-h225-n-nu"
+                heading="Veo"
+                description="Our state-of-the-art video generation model"
+              />
+            </div>
+            <div className="flex-1">
+              <RelatedPostCard
+                imageUrl="https://lh3.googleusercontent.com/VdNH5uoemuWg0x7dA-2JqjZcTZnEQrh5SXca2gFdJPpV3iup3F5LiXm992Eltk0m7l_jntwgRYOyim3JQOG9l2Z0J67wFZBvI7xyTUZLpY5jGgBN=w400-h225-n-nu"
+                heading="Gemini"
+                description="Our new AI model for the agentic era"
+              />
+            </div>
+            <div className="flex-1">
+              <RelatedPostCard
+                imageUrl="https://lh3.googleusercontent.com/Hlq6INY55SNpksLpiR1Nx5ZuugW_RW7LLWnvlwy8yelv6xAo8O0hwRNxEACXmQiFfSuJ_v6nhX4zDcOooiZItYfGMzG0ksz_71xMfmhl15E_hFFJEw=w400-h225-n-nu"
+                heading="SynthID"
+                description="Robust and scalable tool for watermarking and identifying AI-generated images"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="grid grid-cols-12 my-24 mx-16 gap-4 font-sans">
+        <div className="col-span-4">
+          <h2 className="text-4xl">
+            Explore our other teams and product areas
+          </h2>
+        </div>
+        <div className="col-span-8 flex flex-col gap-y-2">
+          <ProductCard
+            imageUrl="https://lh3.googleusercontent.com/mEoPeuGLMyaCy_0D13zsigDvEMMFMN4CHM1Ei7SnX0TYP4lVNDEdNg1CVkFj0UtvPcXpbpOfjMKTN89zPdL1yKZ49IOmGC6yxG0xSqVL0K--oPFG=w24-h24-n-nu"
+            heading="Google AI"
+          />
+          <ProductCard
+            imageUrl="https://lh3.googleusercontent.com/mEoPeuGLMyaCy_0D13zsigDvEMMFMN4CHM1Ei7SnX0TYP4lVNDEdNg1CVkFj0UtvPcXpbpOfjMKTN89zPdL1yKZ49IOmGC6yxG0xSqVL0K--oPFG=w24-h24-n-nu"
+            heading="Google AI for Developers"
+          />
+          <ProductCard
+            imageUrl="https://lh3.googleusercontent.com/-Pzm3sQr-LRYevWQ5LtxHdQvswIBHwhpzxr-KAouHclXaUpJeurQ2V4utSQLJonIzzfSbg2Ynnj9bLO5qcOZxtmVZweTW3t20BhUwHw-6HfLVhlLB-c=w24-h24-n-nu"
+            heading="Google AI Studio"
+          />
+          <ProductCard
+            imageUrl="https://lh3.googleusercontent.com/Q1L4nfLmzxIZfZ1OLh28yO1xjO2kC-McjposYcv5F2Gz2UlKhXtzOa-hsK0n36ZmU2ogijp0IZfsSyY1PKyOERxK-XRrK85F12o7QXWehqfQhAoFZg=w24-h24-n-nu"
+            heading="Gemini"
+          />
+          <ProductCard
+            imageUrl="https://lh3.googleusercontent.com/ehaCd1f5_M3bVHTbeBzqHQThjfqPPsYrEfnbb42VvOv_hsInuoHr3kcqXSAfCYtdiEEAwBE3LIwyuOUPzyXkbEcunakXMUHAMREa1-RSfP1iZPmRLg=w24-h24-n-nu"
+            heading="Google Cloud"
+          />
+          <ProductCard
+            imageUrl="https://lh3.googleusercontent.com/qTJPu1UsvZYMX98y-sQUNQTVakR0cYrtp-uAPT1p9uE7COROm4mzpm4kci6t8IUSTl-CdlrGnOXKFXgv5wl5BMsDHzVc_nZtT8sn9FVcjsj5S9p_=w24-h24-n-nu"
+            heading="Google Labs"
+          />
         </div>
       </div>
     </div>
