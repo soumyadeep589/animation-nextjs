@@ -27,6 +27,7 @@ export default {
           "linear-gradient(90deg, #4285f4 35%, #2daeb8 90%)",
         "gradient-aqua": "linear-gradient(90deg, #d2e3fc 35%, #cbebed 90%)",
         "dark-gray": "rgb(60, 64, 67)",
+        footer: "#f8f9fa",
       },
     },
   },

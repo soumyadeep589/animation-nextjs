@@ -13,6 +13,8 @@ import Robot from "../assets/robot.jpg";
 import Clouds from "../assets/clouds.jpg";
 
 import Carousel from "@/components/carousel";
+import RelatedPostCard from "@/components/relatedPostCard";
+import ProductCard from "@/components/productCard";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -616,16 +618,395 @@ export default function Home() {
             </ul>
           </section>
         </div>
-        <div className="section-3 min-h-[800px] bg-red-300">
-          Doodles to masterpieces
+        <div className="section-3 min-h-[800px] mx-16 font-sans">
+          <div className="grid grid-cols-12 gap-x-12 my-36">
+            <div className="order-2 col-span-6 grid grid-rows-2 grid-cols-2 gap-12">
+              <figure className="col-start-2">
+                <Image
+                  className="rounded-3xl w-full"
+                  src="https://lh3.googleusercontent.com/vfb_JXKvDuToH-tq-iaFeHuw256WmjPDVexBRNtdKa3Nm1P6avsDx8YamC64ZVbcmfnmme9aVa1tZ2OM3v2yTLjqRrzzgkeaVfkVpRMr8fcCTXdzHQ=w276"
+                  alt="Image girls"
+                  width={240}
+                  height={233}
+                />
+                <figcaption className="mt-4">
+                  <p className="text-neutralGray font-normal text-sm">
+                    <strong>Prompt:</strong> Three women stand together
+                    laughing, with one woman slightly out of focus in the
+                    foreground. The sun is setting behind the women, creating a
+                    lens flare and a warm glow
+                  </p>
+                </figcaption>
+              </figure>
+              <figure className="col-start-1 row-start-1 row-end-3 self-center">
+                <Image
+                  className="rounded-3xl w-full"
+                  src="https://lh3.googleusercontent.com/3Eg7pYDZtDqavED1ZJpw-G5TTif7Yd9B__lK0iw8edC0cAJz00AkiiyapMUOAn0Ujcw4CKbRHHJVUd2YYx64Zp00J53OcRxMQBKquQSSdNN9099t7Uk=w276"
+                  alt="Image lion"
+                  width={240}
+                  height={233}
+                />
+                <figcaption className="mt-4">
+                  <p className="text-neutralGray font-normal text-sm">
+                    <strong>Prompt:</strong> Detailed illustration of majestic
+                    lion roaring proudly in a dream-like jungle, purple white
+                    line art background, clipart on light violet paper texture
+                  </p>
+                </figcaption>
+              </figure>
+              <figure className="col-start-2">
+                <Image
+                  className="rounded-3xl w-full"
+                  src="https://lh3.googleusercontent.com/SE1Hokc8jI3T-VOT5EO-HmdOnCnjfUe9QnK6okMrDykgI3xWLG1f3Ev0UpD6-6IBcMzU-tesRT8wJmNcxD1lImDtGogBmapo2bYU3JeUWLUhfcVY=w276"
+                  alt="Image girls"
+                  width={240}
+                  height={233}
+                />
+                <figcaption className="mt-4">
+                  <p className="text-neutralGray font-normal text-sm">
+                    <strong>Prompt:</strong> Claymation scene. A medium wide
+                    shot of an elderly woman. She is wearing flowing clothing.
+                    She is standing in a lush garden watering the plants with an
+                    orange watering can
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+            <div className="col-span-6 pr-24 flex items-center justify-center">
+              <div className="section-breaker__rich-text gdm-rich-text">
+                <h2 className="text-4xl">From Doodles to masterpieces</h2>
+                <p className="text-neutralGray text-pretty mt-4">
+                  We’ve designed Imagen 3 to generate high-quality images in a
+                  wide range of formats and styles, from photorealistic
+                  landscapes to richly textured oil paintings or whimsical
+                  claymation scenes.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="my-[80px] mx-auto max-w-[66rem]">
+            <Carousel />
+          </div>
         </div>
-        <div className="section-4 min-h-[800px] bg-red-300">
-          Versatility & understanding
+        <div className="section-4 min-h-[800px] font-sans">
+          <div className="section-title mx-auto max-w-[50rem] text-center">
+            <h2 className="text-[3rem] text-textBlack mb-6 animate-item text-balance">
+              Greater versatility and prompt understanding
+            </h2>
+            <div className="m-auto max-w-[38rem] text-neutralGray text-pretty animate-item">
+              <p>
+                Imagen 3 understands prompts written in natural, everyday
+                language, making it easier to get the output you want without
+                complex prompt engineering.
+              </p>
+            </div>
+          </div>
+          <figure className="mt-16">
+            <Image
+              className="w-full"
+              src="https://lh3.googleusercontent.com/BwWGmk21tm-ED6ALN-5MKULJ96T-9UlLwxOtToqmnyZ-56iHG7KoyBSQImaEqc00tbugmOO-W16r96jFIQNMtqHijR_4qa43hADGm7yJmovAR0D3nA=w1440"
+              alt="Image girls"
+              width={1440}
+              height={233}
+            />
+            <figcaption className="mt-4 max-w-[39rem] text-balance mx-auto">
+              <p className="text-neutralGray font-normal text-sm">
+                <strong>Prompt:</strong> A close-up photo of an origami bird
+                soaring through a cityscape, in a flock with others of different
+                colors and patterns, casting intricate shadows on the buildings
+                below
+              </p>
+            </figcaption>
+          </figure>
         </div>
-        <div className="section-5 min-h-[800px] bg-red-300">
-          Details & precision
+        <div className="section-5 min-h-[800px] mx-16 font-sans">
+          <div className="section-title text-center mx-auto my-24 max-w-[52rem]">
+            <h2 className="animate-item">
+              Trained on details, delivering on precision
+            </h2>
+            <div className="m-auto max-w-[38rem] text-neutralGray text-pretty animate-item">
+              <p>
+                To help Imagen 3 capture nuances like specific camera angles or
+                compositions in long, complex prompts, we added richer detail to
+                the caption of each image in its training data. Given better
+                information to learn from, Imagen 3 more accurately generates a
+                wide range of subjects and styles.
+              </p>
+            </div>
+          </div>
+          <div className="my-[80px] mx-auto max-w-[66rem]">
+            <Carousel />
+          </div>
+          <div className="section-title text-center mx-auto my-24 max-w-[52rem]">
+            <h2 className="animate-item">Higher quality images</h2>
+            <div className="m-auto max-w-[37rem] text-neutralGray text-pretty animate-item">
+              <p>
+                Imagen 3 generates visually rich, high-quality images, with good
+                lighting and composition. It can accurately render small details
+                like the fine wrinkles on a person’s hand, and complex textures
+                like a knitted stuffed toy elephant.
+              </p>
+            </div>
+          </div>
+          <div className="my-[80px] mx-auto max-w-[66rem]">
+            <Carousel />
+          </div>
+          <div className="grid grid-cols-12 gap-x-12   my-36">
+            <div className="col-span-6 grid grid-rows-2 grid-cols-2 gap-12">
+              <figure className="col-start-1">
+                <Image
+                  className="rounded-3xl w-full"
+                  src="https://lh3.googleusercontent.com/xA4E8uhxg05lu9EymukImuJGS0269du6DT-PXydUDzMSG-8sGxpPpJxNayh61prxQDjZZdLfaaWGenEo8gPd5vyJY2jaHmOUSLEcni3UX-Yu4eaWuT8=w276"
+                  alt="Image girls"
+                  width={240}
+                  height={233}
+                />
+                <figcaption className="mt-4">
+                  <p className="text-neutralGray font-normal text-sm">
+                    <strong>Prompt:</strong> Word “light” made from various
+                    colorful feathers, black background
+                  </p>
+                </figcaption>
+              </figure>
+              <figure className="col-start-2 row-start-1 row-end-3 self-center">
+                <Image
+                  className="rounded-3xl w-full"
+                  src="https://lh3.googleusercontent.com/Qek__OdMejoZCyxn6dzPhxGjfAPb_0B6rDVCIJJzIRO5B7lQ0bU8aV-FT7jt8l1IxTbF2ZBMYC4RHjbbkbZKtXngs4zIK_HAJXlE9et-FisOsOCDuc8=w276"
+                  alt="Image lion"
+                  width={240}
+                  height={233}
+                />
+                <figcaption className="mt-4">
+                  <p className="text-neutralGray font-normal text-sm">
+                    <strong>Prompt:</strong> A single comic book panel of a boy
+                    and his father on a grassy hill, staring at the sunset. A
+                    speech bubble points from the boy&apos;s mouth and says: The
+                    sun will rise again. Muted, late 1990s coloring style
+                  </p>
+                </figcaption>
+              </figure>
+              <figure className="col-start-1">
+                <Image
+                  className="rounded-3xl w-full"
+                  src="https://lh3.googleusercontent.com/G1NFhjOUEeR7fXd9fmCmc5DI3IVWv-fpbpjA3p14zt23mn_o4ASI68a8rnvp4F-HU4QgSbbbhSd5Fue7LkQB4zFa2TOxg08Xck3TmtrcVsWRRxqWLw=w276"
+                  alt="Image girls"
+                  width={240}
+                  height={233}
+                />
+                <figcaption className="mt-4">
+                  <p className="text-neutralGray font-normal text-sm">
+                    <strong>Prompt:</strong> A photograph of a stately library
+                    entrance with the words &quot;Central Library&quot; carved
+                    into the stone
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+            <div className="col-span-6 pl-24 flex items-center justify-center">
+              <div className="section-breaker__rich-text gdm-rich-text">
+                <h2 className="text-4xl">Better text rendering</h2>
+                <p className="text-neutralGray text-pretty mt-4">
+                  We’ve significantly improved its text rendering capabilities,
+                  opening up new possibilities for use cases like stylized
+                  birthday cards, presentations and more.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="section-6 min-h-[800px] bg-red-300">Safety</div>
+        <div className="section-6 min-h-[800px] font-sans">
+          <div className="section-title text-center mx-auto my-24 max-w-[52rem]">
+            <h2 className="animate-item">
+              Safety from development to deployment
+            </h2>
+            <div className="m-auto max-w-[37rem] text-neutralGray text-pretty animate-item">
+              <p>
+                We used extensive filtering and data labeling to minimize
+                harmful content in datasets and reduced the likelihood of
+                harmful outputs. We also conducted red teaming and evaluations
+                on topics including fairness, bias and content safety.
+              </p>
+              <p className="mt-4">
+                We’re deploying Imagen 3 with our latest privacy, safety and
+                security technologies, including our innovative watermarking
+                tool SynthID — which embeds a digital watermark directly into
+                the pixels of the image, making it detectable for identification
+                but imperceptible to the human eye.
+              </p>
+            </div>
+          </div>
+          <section className="animate-item">
+            <div className="flex items-center justify-center gap-4">
+              <button className="flex items-center justify-center hover:bg-red-400 bg-gradient-aqua py-3 px-4 text-textBlack rounded-[24px] text-base font-medium  hover:shadow-lg">
+                View tech report
+                <svg
+                  className="w-5 h-5 dark:text-white ml-2"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M18 14v4.833A1.166 1.166 0 0 1 16.833 20H5.167A1.167 1.167 0 0 1 4 18.833V7.167A1.166 1.166 0 0 1 5.167 6h4.618m4.447-2H20v5.768m-7.889 2.121 7.778-7.778"
+                  />
+                </svg>
+              </button>
+              <button className="flex items-center justify-center hover:bg-red-400 bg-gradient-aqua py-3 px-4 text-textBlack rounded-[24px] t ext-base font-medium  hover:shadow-lg">
+                Learn more about SynthID
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div className="mx-16 mb-16 font-sans">
+        <div className="mx-auto max-w-[38rem]">
+          <p className="text-xl">Acknowledgements</p>
+          <p className="mt-4 text-neutralGray">
+            <strong className="font-medium">Core contributors</strong>
+          </p>
+          <p className="mt-4 text-neutralGray">
+            Jason Baldridge, Jakob Bauer, Mukul Bhutani, Nicole Brichtova,
+            Andrew Bunner, Lluis Castrejon, Kelvin Chan, Yichang Chen, Sander
+            Dieleman, Yuqing Du, Zach Eaton-Rosen, Hongliang Fei, Nando de
+            Freitas, Yilin Gao, Evgeny Gladchenko, Sergio Gómez Colmenarejo,
+            Mandy Guo, Alex Haig, Will Hawkins, Hexiang (Frank) Hu, Huilian
+            Huang, Tobenna Peter Igwe, Christos Kaplanis, Siavash Khodadadeh,
+            Yelin Kim, Ksenia Konyushkova, Karol Langner, Eric Lau, Rory Lawton,
+            Shixin Luo, Soňa Mokrá, Henna Nandwani, Yasumasa Onoe, Aäron van den
+            Oord, Zarana Parekh, Jordi Pont-Tuset, Hang Qi, Rui Qian, Deepak
+            Ramachandran, Poorva Rane, Abdullah Rashwan, Ali Razavi, Robert
+            Riachi, Hansa Srinivasan, Srivatsan Srinivasan, Robin Strudel,
+            Benigno Uria, Oliver Wang, Su Wang, Austin Waters, Chris Wolff,
+            Auriel Wright, Zhisheng Xiao, Hao Xiong, Keyang Xu, Marc van Zee,
+            Junlin Zhang, Katie Zhang, Wenlei Zhou and Konrad Zolna.
+          </p>
+          <p className="mt-4 text-neutralGray">
+            <strong className="font-medium">Contributors</strong>
+          </p>
+          <p className="mt-4 text-neutralGray">
+            Ola Aboubakar, Canfer Akbulut, Oscar Akerlund, Isabela Albuquerque,
+            Nina Anderson, Marco Andreetto, Lora Aroyo, Ben Bariach, David
+            Barker, Praseem Banzal, Sherry Ben, Dana Berman, Courtney Biles,
+            Irina Blok, Pankil Botadra, Jenny Brennan, Karla Brown, John
+            Buckley, Rudy Bunel, Elie Bursztein, Christina Butterfield, Ben
+            Caine, Viral Carpenter, Norman Casagrande, Ming-Wei Chang, Solomon
+            Chang, Shamik Chaudhuri, Tony Chen, John Choi, Dmitry Churbanau,
+            Nathan Clement, Matan Cohen, Forrester Cole, Romina Datta, Mikhail
+            Dektiarev, Vincent Du, Praneet Dutta, Tom Eccles, Ndidi Elue, Ashley
+            Feden, Shlomi Fruchter, Frankie Garcia, Roopal Garg, Weina Ge, Ahmed
+            Ghazy, Bryant Gipson, Andrew Goodman, Dawid Górny, Sven Gowal,
+            Khyatti Gupta, Yoni Halpern, Yena Han, Susan Hao, Jamie Hayes,
+            Jonathan Heek, Amir Hertz, Ed Hirst, Emiel Hoogeboom, Tingbo Hou,
+            Heidi Howard, Mohamed Ibrahim, Dirichi Ike-Njoku, Joana Iljazi, Vlad
+            Ionescu, William Isaac, Komal Jalan, Reena Jana, Gemma Jennings,
+            Donovon Jenson, Xuhui Jia, Kerry Jones, Xiaoen Ju, Ivana Kajic,
+            Christos Kaplanis, Burcu Karagol Ayan, Jacob Kelly, Suraj Kothawade,
+            Christina Kouridi, Ira Ktena, Jolanda Kumakaw, Dana Kurniawan,
+            Dmitry Lagun, Lily Lavitas, Jason Lee, Tao Li, Marco Liang, Ricky
+            Liang, Maggie Li-Calis, Rui Lin, Jasmine Liu, Yuchi Liu, Javier
+            Lopez Alberca, Matthieu Kim Lorrain, Peggy Lu, Kristian Lum, Yukun
+            Ma, Chase Malik, John Mellor, Thomas Mensink, Inbar Mosseri, Tom
+            Murray, Aida Nematzadeh, Paul Nicholas, Signe Nørly, João Gabriel
+            Oliveira, Guillermo Ortiz-Jimenez, Michela Paganini, Tom Le Paine,
+            Roni Paiss, Alicia Parrish, Anne Peckham, Vikas Peswani, Igor
+            Petrovski, Tobias Pfaff, Alex Pirozhenko, Ryan Poplin, Utsav Prabhu,
+            Yuan Qi, Matthew Rahtz, Cyrus Rashtchian, Charvi Rastogi, Amit Raul,
+            Ali Razavi, Sylvestre-Alvise Rebuffi, Susanna Ricco, Felix Riedel,
+            Dirk Robinson, Pankaj Rohatgi, Bill Rosgen, Sarah Rumbley, Moonkyung
+            Ryu, Anthony Salgado, Tim Salimans, Eleni Shaw, Gregory Shaw, Sahil
+            Singla, Florian Schroff, Candice Schumann, Tanmay Shah, Brendan
+            Shillingford, Kaushik Shivakumar, Dennis Shtatnov, Zach Singer,
+            Evgeny Sluzhaev, Valerii Sokolov, Thibault Sottiaux, Florian
+            Stimberg, Brad Stone, David Stutz, Yu-Chuan Su, Eric Tabellion, Amit
+            Talreja, Shuai Tang, David Tao, Kurt Thomas, Gregory Thornton,
+            Andeep Toor, Cristian Udrescu, Aayush Upadhyay, Cristina
+            Vasconcelos, Shanthal Vasanth, Alex Vasiloff, Andrey Voynov, Amanda
+            Walker, Luyu Wang, Miaosen Wang, Simon Wang, Stanley Wang, Qifei
+            Wang, Yuxiao Wang, Ágoston Weisz, Olivia Wiles, Chenxia Wu, Xingyu
+            Federico Xu, Andrew Xue, Jianbo Yang, Luo Yu, Mete Yurtoglu, Ali
+            Zand, Han Zhang, Jiageng Zhang, Catherine Zhao, Adilet Zhaxybay,
+            Miao Zhou, Shengqi Zhu and Zhenkai Zhu.
+          </p>
+          <p className="mt-4 text-neutralGray">
+            <strong className="font-medium">Advisors</strong>
+          </p>
+          <p className="mt-4 text-neutralGray">
+            Dawn Bloxwich, Mahyar Bordbar, Luis C. Cobo, Eli Collins, Shengyang
+            Dai, Tulsee Doshi, Anca Dragan, Douglas Eck, Demis Hassabis, Sissie
+            Hsiao, Tom Hume, Koray Kavukcuoglu, Helen King, Jack Krawczyk,
+            Yeqing Li, Kathy Meier-Hellstern, Andras Orban, Yury Pinsky, Amar
+            Subramanya, Oriol Vinyals, Ting Yu and Yori Zwols.
+          </p>
+        </div>
+      </div>
+      <section className="border-t-2 font-sans mb-8">
+        <div className="mx-16">
+          <div className="my-16 section-heading">
+            <h2 className="text-3xl">More technologies</h2>
+          </div>
+          <div className="flex justify-between gap-10">
+            <div className="flex-1">
+              <RelatedPostCard
+                imageUrl="https://lh3.googleusercontent.com/ulOZK86B4c7sXPcUnDlSQURFolyMa-8XBJQec2Woosd9zBN7De6tbvzRus1CKPVnggG9DdupDYAH_z9DLdy04CP9D_kTQ1RexdN1BGn-kx-6BkXcWA=w400-h225-n-nu"
+                heading="Veo"
+                description="Our state-of-the-art video generation model"
+              />
+            </div>
+            <div className="flex-1">
+              <RelatedPostCard
+                imageUrl="https://lh3.googleusercontent.com/VdNH5uoemuWg0x7dA-2JqjZcTZnEQrh5SXca2gFdJPpV3iup3F5LiXm992Eltk0m7l_jntwgRYOyim3JQOG9l2Z0J67wFZBvI7xyTUZLpY5jGgBN=w400-h225-n-nu"
+                heading="Gemini"
+                description="Our new AI model for the agentic era"
+              />
+            </div>
+            <div className="flex-1">
+              <RelatedPostCard
+                imageUrl="https://lh3.googleusercontent.com/Hlq6INY55SNpksLpiR1Nx5ZuugW_RW7LLWnvlwy8yelv6xAo8O0hwRNxEACXmQiFfSuJ_v6nhX4zDcOooiZItYfGMzG0ksz_71xMfmhl15E_hFFJEw=w400-h225-n-nu"
+                heading="SynthID"
+                description="Robust and scalable tool for watermarking and identifying AI-generated images"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="grid grid-cols-12 my-24 mx-16 gap-4 font-sans">
+        <div className="col-span-4">
+          <h2 className="text-4xl">
+            Explore our other teams and product areas
+          </h2>
+        </div>
+        <div className="col-span-8 flex flex-col gap-y-2">
+          <ProductCard
+            imageUrl="https://lh3.googleusercontent.com/mEoPeuGLMyaCy_0D13zsigDvEMMFMN4CHM1Ei7SnX0TYP4lVNDEdNg1CVkFj0UtvPcXpbpOfjMKTN89zPdL1yKZ49IOmGC6yxG0xSqVL0K--oPFG=w24-h24-n-nu"
+            heading="Google AI"
+          />
+          <ProductCard
+            imageUrl="https://lh3.googleusercontent.com/mEoPeuGLMyaCy_0D13zsigDvEMMFMN4CHM1Ei7SnX0TYP4lVNDEdNg1CVkFj0UtvPcXpbpOfjMKTN89zPdL1yKZ49IOmGC6yxG0xSqVL0K--oPFG=w24-h24-n-nu"
+            heading="Google AI for Developers"
+          />
+          <ProductCard
+            imageUrl="https://lh3.googleusercontent.com/-Pzm3sQr-LRYevWQ5LtxHdQvswIBHwhpzxr-KAouHclXaUpJeurQ2V4utSQLJonIzzfSbg2Ynnj9bLO5qcOZxtmVZweTW3t20BhUwHw-6HfLVhlLB-c=w24-h24-n-nu"
+            heading="Google AI Studio"
+          />
+          <ProductCard
+            imageUrl="https://lh3.googleusercontent.com/Q1L4nfLmzxIZfZ1OLh28yO1xjO2kC-McjposYcv5F2Gz2UlKhXtzOa-hsK0n36ZmU2ogijp0IZfsSyY1PKyOERxK-XRrK85F12o7QXWehqfQhAoFZg=w24-h24-n-nu"
+            heading="Gemini"
+          />
+          <ProductCard
+            imageUrl="https://lh3.googleusercontent.com/ehaCd1f5_M3bVHTbeBzqHQThjfqPPsYrEfnbb42VvOv_hsInuoHr3kcqXSAfCYtdiEEAwBE3LIwyuOUPzyXkbEcunakXMUHAMREa1-RSfP1iZPmRLg=w24-h24-n-nu"
+            heading="Google Cloud"
+          />
+          <ProductCard
+            imageUrl="https://lh3.googleusercontent.com/qTJPu1UsvZYMX98y-sQUNQTVakR0cYrtp-uAPT1p9uE7COROm4mzpm4kci6t8IUSTl-CdlrGnOXKFXgv5wl5BMsDHzVc_nZtT8sn9FVcjsj5S9p_=w24-h24-n-nu"
+            heading="Google Labs"
+          />
+        </div>
       </div>
     </div>
   );
