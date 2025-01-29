@@ -82,7 +82,7 @@ const useIntersectionObserver = (sections: string[]): number | null => {
             setActiveIndex(index);
           }
         },
-        { threshold: 0.4 }
+        { threshold: 0.13 }
       );
 
       observer.observe(section);
@@ -278,7 +278,7 @@ export default function Home() {
         </div>
       </article>
       <section className="min-h-screen block m-auto max-w-[58rem] w-full flex items-center justify-center">
-        <div className="text-container text-[2.8rem] font-sans font-normal tracking-[-0.5px] leading-[1.1666666667] text-gray-900 text-center break-words overflow-wrap-normal bg-clip-text bg-gradient-blue-green text-balance">
+        <div className="text-container text-[2.8rem] font-sans font-normal tracking-[-0.5px] leading-[1.167] text-gray-900 text-center break-words overflow-wrap-normal bg-clip-text bg-gradient-blue-green text-balance">
           <p>
             <span>Imagen 3 is our </span>
             <span>
@@ -751,7 +751,7 @@ export default function Home() {
           <div className="my-[80px] mx-auto max-w-[66rem]">
             <Carousel />
           </div>
-          <div className="grid grid-cols-12 gap-x-12   my-36">
+          <div className="grid grid-cols-12 gap-x-12 my-36">
             <div className="col-span-6 grid grid-rows-2 grid-cols-2 gap-12">
               <figure className="col-start-1">
                 <Image
